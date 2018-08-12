@@ -1,4 +1,4 @@
-let csvLocation = ('./../kindle-flashcards/output/');
+let csvLocation = ('./output/');
 const csvFilePath = csvLocation+'The Book Thief.txt';
 
 var fs = require('fs');
