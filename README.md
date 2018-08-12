@@ -49,3 +49,12 @@ speech.lang = 'de-DE';
 speechSynthesis.speak(speech);
 </script>
 ```
+
+
+## To add:
+Get Dictionary definition:
+    - from the kindle?
+    - from the internet?
+Add dictionary definition to the card.
+Merge all text files into one.
+Export to my phone/anki on laptop
