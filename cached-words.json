@@ -1,0 +1,630 @@
+{
+    "Affable": {
+        "metadata": {
+            "provider": "Oxford University Press"
+        },
+        "results": [
+            {
+                "id": "affable",
+                "language": "en",
+                "lexicalEntries": [
+                    {
+                        "derivatives": [
+                            {
+                                "id": "affably",
+                                "text": "affably"
+                            }
+                        ],
+                        "entries": [
+                            {
+                                "etymologies": [
+                                    "late Middle English: via Old French from Latin affabilis, from the verb affari, from ad- ‘to’ + fari ‘speak’"
+                                ],
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Positive",
+                                        "type": "Degree"
+                                    }
+                                ],
+                                "homographNumber": "000",
+                                "senses": [
+                                    {
+                                        "definitions": [
+                                            "friendly, good-natured, or easy to talk to"
+                                        ],
+                                        "examples": [
+                                            {
+                                                "text": "an affable and agreeable companion"
+                                            }
+                                        ],
+                                        "id": "m_en_gbus0013720.005",
+                                        "short_definitions": [
+                                            "friendly, good-natured, or easy to talk to"
+                                        ],
+                                        "thesaurusLinks": [
+                                            {
+                                                "entry_id": "affable",
+                                                "sense_id": "t_en_gb0000327.001"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Adjective",
+                        "pronunciations": [
+                            {
+                                "audioFile": "http://audio.oxforddictionaries.com/en/mp3/affable_gb_1.mp3",
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "ˈafəb(ə)l"
+                            }
+                        ],
+                        "text": "affable"
+                    }
+                ],
+                "type": "headword",
+                "word": "affable"
+            }
+        ]
+    },
+    "genially": {
+        "metadata": {
+            "provider": "Oxford University Press"
+        },
+        "results": [
+            {
+                "id": "genially",
+                "language": "en",
+                "lexicalEntries": [
+                    {
+                        "derivativeOf": [
+                            {
+                                "id": "genial",
+                                "text": "genial"
+                            }
+                        ],
+                        "entries": [
+                            {
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Positive",
+                                        "type": "Degree"
+                                    }
+                                ],
+                                "homographNumber": "000"
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Adverb",
+                        "pronunciations": [
+                            {
+                                "audioFile": "http://audio.oxforddictionaries.com/en/mp3/genially_gb_1.mp3",
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "ˈdʒiːnɪəli"
+                            }
+                        ],
+                        "text": "genially"
+                    }
+                ],
+                "type": "headword",
+                "word": "genially"
+            }
+        ]
+    },
+    "abhorrence": {
+        "metadata": {
+            "provider": "Oxford University Press"
+        },
+        "results": [
+            {
+                "id": "abhorrence",
+                "language": "en",
+                "lexicalEntries": [
+                    {
+                        "entries": [
+                            {
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Mass",
+                                        "type": "Countability"
+                                    },
+                                    {
+                                        "text": "Singular",
+                                        "type": "Number"
+                                    }
+                                ],
+                                "homographNumber": "000",
+                                "senses": [
+                                    {
+                                        "definitions": [
+                                            "a feeling of revulsion; disgusted loathing"
+                                        ],
+                                        "examples": [
+                                            {
+                                                "text": "the thought of marrying him filled her with abhorrence"
+                                            }
+                                        ],
+                                        "id": "m_en_gbus0001710.007",
+                                        "short_definitions": [
+                                            "feeling of revulsion"
+                                        ],
+                                        "thesaurusLinks": [
+                                            {
+                                                "entry_id": "hatred",
+                                                "sense_id": "t_en_gb0006809.001"
+                                            },
+                                            {
+                                                "entry_id": "abhorrence",
+                                                "sense_id": "t_en_gb0000027.001"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Noun",
+                        "pronunciations": [
+                            {
+                                "audioFile": "http://audio.oxforddictionaries.com/en/mp3/abhorrence_gb_1.mp3",
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "əbˈhɒr(ə)ns"
+                            }
+                        ],
+                        "text": "abhorrence"
+                    }
+                ],
+                "type": "headword",
+                "word": "abhorrence"
+            }
+        ]
+    },
+    "versatility": {
+        "metadata": {
+            "provider": "Oxford University Press"
+        },
+        "results": [
+            {
+                "id": "versatility",
+                "language": "en",
+                "lexicalEntries": [
+                    {
+                        "entries": [
+                            {
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Mass",
+                                        "type": "Countability"
+                                    },
+                                    {
+                                        "text": "Singular",
+                                        "type": "Number"
+                                    }
+                                ],
+                                "homographNumber": "000",
+                                "senses": [
+                                    {
+                                        "definitions": [
+                                            "ability to adapt or be adapted to many different functions or activities"
+                                        ],
+                                        "examples": [
+                                            {
+                                                "text": "the versatility of the modern computer as a study aid"
+                                            },
+                                            {
+                                                "text": "a writer of remarkable versatility"
+                                            }
+                                        ],
+                                        "id": "m_en_gbus1125720.004",
+                                        "short_definitions": [
+                                            "ability to adapt or be adapted to many different functions or activities"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Noun",
+                        "pronunciations": [
+                            {
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "vəːsəˈtɪlɪti"
+                            }
+                        ],
+                        "text": "versatility"
+                    }
+                ],
+                "type": "headword",
+                "word": "versatility"
+            }
+        ]
+    },
+    "trepidation": {
+        "metadata": {
+            "provider": "Oxford University Press"
+        },
+        "results": [
+            {
+                "id": "trepidation",
+                "language": "en",
+                "lexicalEntries": [
+                    {
+                        "entries": [
+                            {
+                                "etymologies": [
+                                    "late 15th century: from Latin trepidatio(n-), from trepidare ‘be agitated, tremble’, from trepidus ‘alarmed’"
+                                ],
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Mass",
+                                        "type": "Countability"
+                                    },
+                                    {
+                                        "text": "Singular",
+                                        "type": "Number"
+                                    }
+                                ],
+                                "homographNumber": "000",
+                                "senses": [
+                                    {
+                                        "definitions": [
+                                            "a feeling of fear or anxiety about something that may happen"
+                                        ],
+                                        "examples": [
+                                            {
+                                                "text": "the men set off in fear and trepidation"
+                                            }
+                                        ],
+                                        "id": "m_en_gbus1072790.006",
+                                        "short_definitions": [
+                                            "feeling of fear or anxiety about something that may happen"
+                                        ],
+                                        "thesaurusLinks": [
+                                            {
+                                                "entry_id": "trepidation",
+                                                "sense_id": "t_en_gb0015141.001"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "definitions": [
+                                            "trembling movements or motion."
+                                        ],
+                                        "domains": [
+                                            "Medicine"
+                                        ],
+                                        "id": "m_en_gbus1072790.009",
+                                        "registers": [
+                                            "archaic"
+                                        ],
+                                        "short_definitions": [
+                                            "trembling movements or motion"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Noun",
+                        "pronunciations": [
+                            {
+                                "audioFile": "http://audio.oxforddictionaries.com/en/mp3/trepidation_gb_1.mp3",
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "ˌtrɛpɪˈdeɪʃ(ə)n"
+                            }
+                        ],
+                        "text": "trepidation"
+                    }
+                ],
+                "type": "headword",
+                "word": "trepidation"
+            }
+        ]
+    },
+    "torrent": {
+        "metadata": {
+            "provider": "Oxford University Press"
+        },
+        "results": [
+            {
+                "id": "torrent",
+                "language": "en",
+                "lexicalEntries": [
+                    {
+                        "entries": [
+                            {
+                                "etymologies": [
+                                    "late 16th century: from French, from Italian torrente, from Latin torrent- ‘boiling, roaring’, from torrere ‘parch, scorch’"
+                                ],
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Singular",
+                                        "type": "Number"
+                                    }
+                                ],
+                                "homographNumber": "000",
+                                "senses": [
+                                    {
+                                        "definitions": [
+                                            "a strong and fast-moving stream of water or other liquid"
+                                        ],
+                                        "examples": [
+                                            {
+                                                "text": "after the rains, the stream becomes a raging torrent"
+                                            },
+                                            {
+                                                "text": "rain poured down in torrents"
+                                            }
+                                        ],
+                                        "id": "m_en_gbus1063150.007",
+                                        "short_definitions": [
+                                            "strong and fast-moving stream of water or other liquid"
+                                        ],
+                                        "subsenses": [
+                                            {
+                                                "definitions": [
+                                                    "an overwhelming outpouring of (something, typically words)"
+                                                ],
+                                                "examples": [
+                                                    {
+                                                        "text": "she was subjected to a torrent of abuse"
+                                                    }
+                                                ],
+                                                "id": "m_en_gbus1063150.011",
+                                                "notes": [
+                                                    {
+                                                        "text": "\"a torrent of/torrents of\"",
+                                                        "type": "wordFormNote"
+                                                    }
+                                                ],
+                                                "short_definitions": [
+                                                    "overwhelming outpouring of"
+                                                ],
+                                                "thesaurusLinks": [
+                                                    {
+                                                        "entry_id": "torrent",
+                                                        "sense_id": "t_en_gb0014996.003"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "thesaurusLinks": [
+                                            {
+                                                "entry_id": "torrent",
+                                                "sense_id": "t_en_gb0014996.002"
+                                            },
+                                            {
+                                                "entry_id": "torrent",
+                                                "sense_id": "t_en_gb0014996.001"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Noun",
+                        "pronunciations": [
+                            {
+                                "audioFile": "http://audio.oxforddictionaries.com/en/mp3/torrent_gb_1.mp3",
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "ˈtɒr(ə)nt"
+                            }
+                        ],
+                        "text": "torrent"
+                    }
+                ],
+                "type": "headword",
+                "word": "torrent"
+            }
+        ]
+    },
+    "innocuously": {
+        "metadata": {
+            "provider": "Oxford University Press"
+        },
+        "results": [
+            {
+                "id": "innocuously",
+                "language": "en",
+                "lexicalEntries": [
+                    {
+                        "derivativeOf": [
+                            {
+                                "id": "innocuous",
+                                "text": "innocuous"
+                            }
+                        ],
+                        "entries": [
+                            {
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Positive",
+                                        "type": "Degree"
+                                    }
+                                ],
+                                "homographNumber": "000"
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Adverb",
+                        "pronunciations": [
+                            {
+                                "audioFile": "http://audio.oxforddictionaries.com/en/mp3/innocuously_gb_1.mp3",
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "ɪˈnɒkjʊəsli"
+                            }
+                        ],
+                        "text": "innocuously"
+                    }
+                ],
+                "type": "headword",
+                "word": "innocuously"
+            }
+        ]
+    },
+    "echelons": {
+        "definition": "unknown"
+    },
+    "trundle": {
+        "metadata": {
+            "provider": "Oxford University Press"
+        },
+        "results": [
+            {
+                "id": "trundle",
+                "language": "en",
+                "lexicalEntries": [
+                    {
+                        "entries": [
+                            {
+                                "etymologies": [
+                                    "mid 16th century (denoting a small wheel or roller): a parallel formation to obsolete or dialect trendle, trindle ‘revolve’; related to trend"
+                                ],
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Present",
+                                        "type": "Tense"
+                                    }
+                                ],
+                                "homographNumber": "000",
+                                "senses": [
+                                    {
+                                        "definitions": [
+                                            "(with reference to a wheeled vehicle or its occupants) move or cause to move slowly and heavily"
+                                        ],
+                                        "examples": [
+                                            {
+                                                "text": "ten vintage cars trundled past"
+                                            },
+                                            {
+                                                "text": "we trundled a wheelbarrow down to the river and collected driftwood"
+                                            }
+                                        ],
+                                        "id": "m_en_gbus1078880.005",
+                                        "short_definitions": [
+                                            "move or cause to move slowly"
+                                        ],
+                                        "subsenses": [
+                                            {
+                                                "definitions": [
+                                                    "(of a person) move heavily and slowly"
+                                                ],
+                                                "examples": [
+                                                    {
+                                                        "text": "she heard him coughing as he trundled out"
+                                                    }
+                                                ],
+                                                "id": "m_en_gbus1078880.012",
+                                                "notes": [
+                                                    {
+                                                        "text": "no object, with adverbial of direction",
+                                                        "type": "grammaticalNote"
+                                                    }
+                                                ],
+                                                "short_definitions": [
+                                                    "move heavily"
+                                                ],
+                                                "thesaurusLinks": [
+                                                    {
+                                                        "entry_id": "roll",
+                                                        "sense_id": "t_en_gb0012706.002"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "thesaurusLinks": [
+                                            {
+                                                "entry_id": "wheel",
+                                                "sense_id": "t_en_gb0016217.004"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Verb",
+                        "pronunciations": [
+                            {
+                                "audioFile": "http://audio.oxforddictionaries.com/en/mp3/trundle_gb_1.mp3",
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "ˈtrʌnd(ə)l"
+                            }
+                        ],
+                        "text": "trundle"
+                    },
+                    {
+                        "entries": [
+                            {
+                                "grammaticalFeatures": [
+                                    {
+                                        "text": "Singular",
+                                        "type": "Number"
+                                    }
+                                ],
+                                "homographNumber": "001",
+                                "senses": [
+                                    {
+                                        "definitions": [
+                                            "an act of moving slowly or heavily"
+                                        ],
+                                        "examples": [
+                                            {
+                                                "text": "the journey was just a trundle around the Northern line"
+                                            }
+                                        ],
+                                        "id": "m_en_gbus1078880.015",
+                                        "short_definitions": [
+                                            "act of moving slowly or heavily"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "language": "en",
+                        "lexicalCategory": "Noun",
+                        "pronunciations": [
+                            {
+                                "audioFile": "http://audio.oxforddictionaries.com/en/mp3/trundle_gb_1.mp3",
+                                "dialects": [
+                                    "British English"
+                                ],
+                                "phoneticNotation": "IPA",
+                                "phoneticSpelling": "ˈtrʌnd(ə)l"
+                            }
+                        ],
+                        "text": "trundle"
+                    }
+                ],
+                "type": "headword",
+                "word": "trundle"
+            }
+        ]
+    }
+}
