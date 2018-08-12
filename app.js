@@ -1,5 +1,5 @@
 let csvLocation = ('./output/');
-const csvFilePath = csvLocation+'The Book Thief.txt';
+const csvFilePath = csvLocation+'Undisputed Truth: My Autobiography.txt';
 
 var fs = require('fs');
 
@@ -58,24 +58,91 @@ async function main() {
     //console.log(JSON.stringify(allWords,null,4));
     //for each word, check get the entry
     console.log('Looking up the defintions');
-    allWords = getAllDefinitions(allWords);
+    allWords = await getAllDefinitions(allWords);
 
+    // console.log('all words' + JSON.stringify(allWords));
     
     //convert entries suited to ANKI
-
+    createAnkiDeck(allWords);
     //write final output.txt
 
     //handle empty entries - add it as unknown and you can optianlly paste in a meaning or hit enter to continue.
 };
 main();
 
+function createAnkiDeck(entries){
+    Object.keys(entries).forEach(entry =>{
+        console.log('making card for first word: ' + entry);
+
+        let fullEntry = entries[entry];
+
+        let card = createAnkiCard(fullEntry);
+
+        // console.log('checking for ' + JSON.stringify(fullEntry,null,4));
+        console.log('card:');
+        console.log(card);
+
+        // process.exit(0);
+    });
+}
+
+function createAnkiCard(entry){
+    let card = {};
+    let front = '<h3>'+entry.word+'</h3>';
+
+    let back = '';
+
+    //for each meaning of the word
+    // console.log(JSON.stringify(entry,null,4));
+
+    if(entry.definition.definition!=='unknown'){
+        entry.definition.results.forEach((result)=>{
+            result.lexicalEntries.forEach((lexicalEntry)=>{
+                lexicalEntry.entries.forEach((entry)=>{
+                    if(entry.senses){
+                        entry.senses.forEach(sense =>{
+                            if(sense.definitions){
+                                sense.definitions.forEach(definition =>{
+                                    back += '<p>'+definition+'</p>\n';
+                                });
+                            }else{
+                                back += '<p>No Definitions from Oxford Dictionary</p>\n';
+                            }
+                            back += '<h4>Examples</h4>\n';
+                            back += '<p>'+result.usage+'</p>';
+                            if(sense.examples){
+                                sense.examples.forEach(example =>{
+                                    back += '<p>'+example.text+'</p>\n';
+                                });
+                            }else{
+                                back += '<p>No Examples from Oxford Dictionary</p>\n';
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    }else{
+        back = '<p>Unknown Definition</p>';
+    }
+    // console.log('here');
+    // console.log('front: ' + front);
+    // console.log('back: ' + back);
+    card.front = front;
+    card.back = back;
+    return card;
+}
+
 
 async function getAllDefinitions(words) {
     for(const word of Object.keys(words)){
         let definition =  await lookupDefinition(word);
-        console.log('defintiion for: ' + word);
-        console.log(JSON.stringify(definition));
-        word.definition = definition;
+        // console.log('defintiion for: ' + word);
+        
+        words[word].definition = definition;
+
+        // console.log(JSON.stringify(words[word],null,4));
+        // process.exit(0);
     }
 
     return words;
