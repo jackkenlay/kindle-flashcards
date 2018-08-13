@@ -23,7 +23,6 @@ async function readLines(input) {
         var remaining = '';
     
       input.on('data', function(data) {
-          console.log('a');
         remaining += data;
         var index = remaining.indexOf('\n');
         while (index > -1) {
@@ -74,15 +73,15 @@ main();
 async function createAnkiDeck(entries, filename){
     let allCards = [];
     Object.keys(entries).forEach(entry =>{
-        console.log('making card for first word: ' + entry);
+        // console.log('making card for first word: ' + entry);
 
         let fullEntry = entries[entry];
 
         let card = createAnkiCard(fullEntry);
 
         // console.log('checking for ' + JSON.stringify(fullEntry,null,4));
-        console.log('card:');
-        console.log(card);
+        // console.log('card:');
+        // console.log(card);
         allCards.push(card);
         // process.exit(0);
     });
@@ -107,7 +106,7 @@ async function exportAnkiCards(deck, filename){
 function getCSVString(deck){
     let fileText = '';
     deck.forEach(card =>{
-        fileText += `"${card.front}",,,"${card.back}"\n`;
+        fileText += `"${card.front}"\t"${card.back}"\n`;
     });
     return fileText;
 }
@@ -129,16 +128,16 @@ function createAnkiCard(entry){
                         entry.senses.forEach(sense =>{
                             if(sense.definitions){
                                 sense.definitions.forEach(definition =>{
-                                    back += '<p>'+definition+'</p>\\n';
+                                    back += '<p>'+definition+'</p>';
                                 });
                             }else{
-                                back += '<p>No Definitions from Oxford Dictionary</p>\\n';
+                                back += '<p>No Definitions from Oxford Dictionary</p>';
                             }
-                            back += '<h4>Examples</h4>\\n';
+                            back += '<h4>Examples</h4>';
                             back += '<p>'+result.usage+'</p>';
                             if(sense.examples){
                                 sense.examples.forEach(example =>{
-                                    back += '<p>'+example.text+'</p>\\n';
+                                    back += '<p>'+example.text+'</p>';
                                 });
                             }else{
                                 back += '<p>No Examples from Oxford Dictionary</p>';
