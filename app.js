@@ -1,5 +1,10 @@
 let csvLocation = ('./output/');
-const csvFilePath = csvLocation+'Undisputed Truth: My Autobiography.txt';
+const csvFilePath = csvLocation;
+
+const FgGreen = "\x1b[32m";
+const ColorReset = "\x1b[0m";
+const FgYellow = "\x1b[33m";
+const FgRed = "\x1b[31m";
 
 var fs = require('fs');
 
@@ -15,7 +20,7 @@ var config = {
 };
 var dict = new Dictionary(config);
 
-
+//https://electronjs.org/docs/tutorial/first-app ??
 
 async function readLines(input) {
     return new Promise(resolve =>{
@@ -47,28 +52,52 @@ async function readLines(input) {
 async function main() {
     //get all lines from the parsed kindle entry
     console.log('getting words from kindle');
-    var input = fs.createReadStream(csvFilePath);
-    let parsedWords = await readLines(input);
 
-    console.log('converting each word to an object');
-    //parse each word as an object
-    let allWords = parseAllLines(parsedWords);
+    let allFiles = await getAllFilesInDirectory();
 
-    //console.log(JSON.stringify(allWords,null,4));
-    //for each word, check get the entry
-    console.log('Looking up the defintions');
-    allWords = await getAllDefinitions(allWords);
+    console.log(allFiles);
 
-    // console.log('all words' + JSON.stringify(allWords));
+    let allWords = {};    
+    // allFiles.forEach(async (file)=>{
+    for(const file of allFiles){
+        console.log(csvLocation +''+  file);
+        
+        var input = fs.createReadStream(csvLocation + file);
+        let parsedWords = await readLines(input);
     
+        // console.log('converting each word to an object...');
+        //parse each word as an object
+        let allWordsAsObjects = parseAllLines(parsedWords);
+    
+        // console.log(JSON.stringify(allWords,null,4));
+        //for each word, check get the entry
+        // console.log('Looking up the defintions');
+        // process.exit(0);
+        //returns a JSON object?
+        let words = await getAllDefinitions(allWordsAsObjects);
+
+        //technically this should join them
+        allWords = Object.assign(allWords, words);
+    };
+    console.log('All words');
+    console.log(JSON.stringify(allWords,null,4));
+    
+    // console.log('all words' + JSON.stringify(allWords));
     //convert entries suited to ANKI
     await createAnkiDeck(allWords,'output.csv');
     //write final output.txt
-
-    
     //handle empty entries - add it as unknown and you can optianlly paste in a meaning or hit enter to continue.
 };
 main();
+
+async function getAllFilesInDirectory(){
+    let allFiles = [];
+    fs.readdirSync(csvLocation).forEach(file => {
+        allFiles.push(file);
+    });
+    console.log('all files');
+    return allFiles;
+}
 
 async function createAnkiDeck(entries, filename){
     let allCards = [];
@@ -211,13 +240,19 @@ async function writeCachedDictionary(inputJSON){
 
 async function getDefinition(inputWord){
     return new Promise(resolve=>{
+        process.stdout.write("Looking up " + inputWord + '...\r');
         setTimeout(async function(){
             let lookup;
             try {
                 lookup = await dict.find(inputWord);
+                console.log(FgGreen,'Found definition for: ' + inputWord, ColorReset);
             } catch(err) {
-                console.log("Dictionary Error Lookin up " + inputWord);
-                console.log(err);
+                if(err ==='No such entry found.'){
+                    console.log(FgYellow,"No Such Entry found for: " + inputWord, ColorReset);
+                }else{
+                    console.log(FgRed,"Error looking up word: " + err, ColorReset);
+                }
+                // console.log(err);
                 //todo add option for manual entry
                 lookup = {
                     definition:'unknown'
